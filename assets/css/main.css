@@ -1111,6 +1111,10 @@ input, select, textarea {
     width: 100%;
     border: none;
     border-radius: 5px;
+color: black !important;
+backgorund: white !important;
+
+	
 }
 
 #contact-form button {
