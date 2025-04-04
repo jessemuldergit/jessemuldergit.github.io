@@ -1079,11 +1079,6 @@ input, select, textarea {
 		#header nav {
 			padding: 0 1em;
 		} }
-/* Verwijderen van de achtergrondstrepen */
-#bg:before {
-    background-image: none !important;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparante achtergrond */
-}
 
 /* Contactformulier stijlen */
 #contact-form {
