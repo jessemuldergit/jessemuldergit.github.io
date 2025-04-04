@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Jesse Mulder</title>
+		<title>Aerial by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,13 +20,15 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Jesse Mulder</h1>
-						<p>Microsoft Engineer &nbsp;&bull;&nbsp; Modern Workplace &nbsp;&bull;&nbsp; Role based access control</p>
+						<h1>Adam Jensen</h1>
+						<p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
 						<nav>
 							<ul>
 								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.linkedin.com/in/mulder-j/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								
+<li><a href="https://www.linkedin.com/in/jouw-profiel" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
 								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
 								<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
@@ -35,7 +37,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; Jesse Mulder.</span>
+						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
 					</footer>
 
 			</div>
@@ -45,5 +47,35 @@
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
-	</body>
+	
+<!-- Contactformulier -->
+<div id="contact-form" class="hidden">
+    <form>
+        <h2>Contacteer mij</h2>
+        <input type="text" name="name" placeholder="Naam" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <textarea name="message" placeholder="Je bericht" required></textarea>
+        <button type="submit">Verstuur</button>
+        <button type="button" id="close-form">Sluiten</button>
+    </form>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let contactButton = document.querySelector(".fa-envelope");
+        let contactForm = document.getElementById("contact-form");
+        let closeForm = document.getElementById("close-form");
+
+        contactButton.addEventListener("click", function(event) {
+            event.preventDefault();
+            contactForm.classList.add("show");
+        });
+
+        closeForm.addEventListener("click", function() {
+            contactForm.classList.remove("show");
+        });
+    });
+</script>
+
+</body>
 </html>
