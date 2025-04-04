@@ -1079,3 +1079,49 @@ input, select, textarea {
 		#header nav {
 			padding: 0 1em;
 		} }
+/* Verwijderen van de achtergrondstrepen */
+#bg:before {
+    background-image: none !important;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparante achtergrond */
+}
+
+/* Contactformulier stijlen */
+#contact-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
+    width: 300px;
+    text-align: center;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input, #contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contact-form.show {
+    transform: translate(-50%, -50%) scale(1);
+}
