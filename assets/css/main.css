@@ -1124,3 +1124,20 @@ backgorund: white !important;
 #contact-form.show {
     transform: translate(-50%, -50%) scale(1);
 }
+
+/* Zorg dat knoppen leesbaar zijn op mobiel */
+#contact-form button {
+    color: black !important;
+    background-color: #f0f0f0 !important;
+    border: 1px solid #ccc;
+}
+
+#contact-form button:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+  #contact-form button {
+    font-size: 1rem;
+  }
+}
