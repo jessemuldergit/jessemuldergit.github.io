@@ -893,7 +893,7 @@ input, select, textarea {
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
-
+		
 		/* Basic */
 
 			body {
@@ -1087,11 +1087,12 @@ input, select, textarea {
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background: rgba(0, 0, 0, 0.8);
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     transition: transform 0.5s ease-in-out;
     z-index: 1000;
-    width: 500px;
+	width: 50%;
+    max-width: 600px;
 	height: auto;
     text-align: center;
 }
@@ -1132,4 +1133,37 @@ input, select, textarea {
 
 #contact-form button:hover {
     background-color: #ddd;
+}
+
+@media screen and (max-width: 736px) {
+		
+		
+	#contact-form {
+		width: 90%; /* Zorg ervoor dat het formulier binnen het scherm past op tablets en kleinere apparaten */
+		max-width: 500px; /* Behoud een maximale breedte */
+	}
+}
+
+@media screen and (max-width: 480px) {
+		
+	/* Conact Form '*/
+
+	#contact-form {
+		width: 90%; /* Zorg ervoor dat het formulier binnen het scherm past */
+		padding: 15px; /* Minder padding voor kleinere schermen */
+	}
+	
+    #contact-form button {
+        font-size: 0.9rem; /* Kleinere tekstgrootte */
+        padding: 8px; /* Minder padding */
+    }
+
+	#contact-form textarea {
+		height: 200px; /* Pas de hoogte van het tekstgebied aan */
+
+	}
+	#contact-form input {
+        font-size: 0.9rem; /* Kleinere tekstgrootte */
+        padding: 8px; /* Minder padding */
+    }
 }
